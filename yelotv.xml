@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Clients>
+    <Client name="YeloTV">
+        <Identification>
+            <Header name="FriendlyName.dlna.org" substring="5810CX" />
+            <Header name="User-Agent" substring="L21XTLNDGRD/v4.11-rc-368-g5ae72c6"/>
+            <Header name="User-Agent" substring="L21XTLNDGRD"/>
+        </Identification>
+        <TranscodeTargets>
+            <VideoProfile container="mpegts" codec="h264" audioCodec="aac">
+                <Setting name="SubtitleSize" value="100"/>
+                <!-- put the above line (SubtitleSize) in comments if you don't want any subtitles encoded in the stream -->
+                <Setting name="AudioSyncFlags" value="3"/>
+                <Setting name="MpegtsM2tsMode" value="true"/>
+            </VideoProfile>
+            <MusicProfile container="aac" codec="aac"/>
+            <PhotoProfile container="jpeg"/>
+        </TranscodeTargets>
+
+        <DirectPlayProfiles>
+            <VideoProfile container="mpeg" codec="mpeg2video" audioCodec="ac3"/>
+            <VideoProfile container="mpegts" codec="mpeg2video" audioCodec="ac3"/>
+            <VideoProfile container="mp4" codec="h264" audioCodec="aac"/>
+            <MusicProfile container="mp3" codec="mp3"/>
+            <MusicProfile container="aac" codec="aac"/>
+            <PhotoProfile container="jpeg,png"/>
+        </DirectPlayProfiles>
+    </Client>
+</Clients>

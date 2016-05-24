@@ -5,7 +5,7 @@ YeloTV profile for plex
 `https://forums.plex.tv/discussion/73702/writing-profiles-for-dlna-devices`
 
 ### Install
-- `$ cd /Users/ilja/Library/Application Support/Plex Media Server`
+- `$ cd ~/Library/Application Support/Plex Media Server`
 - `$ mkdir Profiles`
 - copy yelotv.xml to this directory
 - restart Plex Media Server
